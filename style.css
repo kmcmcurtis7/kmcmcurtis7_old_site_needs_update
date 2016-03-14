@@ -1,0 +1,129 @@
+/* NAVIGATION BAR */
+
+.navbar {
+  font-size: 22px;
+  background-color: rgba(255,191,128.0.5);
+  color: beige;
+}
+
+/*  */
+body {
+  font-family: 'Bad Script',cursive;
+  background-color: #000000;
+  padding-top: 7em;
+  padding-bottom: 1em;
+}
+
+/* Allowing scrollspy flexibility */
+.scrollspy-example {
+    position: relative;
+}
+
+/* Change the color of the grain leaf icon to green */
+.glyphicon {
+  color: forestgreen;
+}
+
+
+
+/*  */
+#antiwhite {
+  color: antiquewhite;
+}
+
+/* Option to change objects to transparent */
+#transparent {
+  background-color: transparent;
+}
+
+
+/* Color design for Social Icon buttons */
+.btn {
+  border-color: navy;
+  border-width: 2px;
+  background-color: antiquewhite;
+  color: navy;
+  font-size: 1em;
+}
+
+/* SOCIAL ICONS */
+#icon {
+  float: inherit;
+  text-align: center;
+  padding: 5, 5, 5, 15;
+}
+
+/* Option to center various objects */
+#center {
+  text-align: center;
+}
+
+/* Griffy font */
+#griffy {
+  font-family: 'Griffy',cursive;
+}
+
+
+/* **********MAIN CONTENT********* */
+
+/* HOME SECTION */
+/* Background image for HOME section */
+.home_pic {
+  background: url('/images/Snow.jpg') repeat center center;
+  width: 100%;
+  height: 500; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.jumbotron {
+  height: 350px;
+  color: navy;
+  text-shadow: #444 0 .3em .3em;
+  background: transparent;
+  font-size: 50%;
+  vertical-align: middle;
+}
+
+/* ABOUT SECTION */
+/* Background image for ABOUT section */
+.about_pic {
+  background: url('/images/group-meeting.jpg') center center;
+  width: 100%;
+  height: 500; 
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+/* Allowing the ABOUT ME paragraph to stand out more */
+.well {
+  border-color: navy;
+  border-width: .2em;
+  background-color: antiquewhite;
+  color: navy;
+}
+
+/* MY WORK SECTION */
+/* Background image for MY WORK section */
+.portfolio_pic {
+  background: url('/images/sand.jpg') repeat center center;
+  width: 100%;
+  height: 500; 
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+
+/* CONTACT SECTION */
+/* Background image for Contact section */
+.contact_pic {
+  background: url('/images/circuit-board.jpg') repeat center center;
+  width: 100%;
+  height: 500; 
+  top:0;
+  left:0;
+  z-index: -1;
+}
