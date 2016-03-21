@@ -1,15 +1,34 @@
 /* NAVIGATION BAR */
 
-.navbar {
-  font-size: 22px;
-  background-color: black;
-  color: saddlebrown;
+
+/* NAVIGATION BAR override Bootstrap for colors */
+/*You can create a custom navbar class, and then reference it to change the navbar without impacting other Bootstrap navbars 
+http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3
+*/
+
+.navbar-custom {
+    background-color: rgba(250,235,215,0.9);
+    color: saddlebrown;
+    border-radius:0;
 }
+
+.navbar-custom .navbar-nav > li > a {
+    color: saddlebrown;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: saddlebrown;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color: saddlebrown;
+}
+
+
 
 /* Main BODY colors & font */
 body {
   font-family: 'Papyrus';
-  background-color: #000000;
+  background-color: black;
   color: saddlebrown;
   text-emphasis: 30em;
   padding-top: 7em;
@@ -27,12 +46,9 @@ body {
   color: darkgreen;
 }
 
-.fa {
-  color: darkgreen;
-}
 
-/*  */
-#antiwhite {
+/* Option to change object to Blanched Almond color */
+#blchalmond {
   color: blanchedalmond;
 }
 
@@ -44,18 +60,31 @@ body {
 
 /* Color design for Social Icon buttons */
 .btn {
-  border-color: blanchedalmond;
-  border-width: 2px;
+  border-color: saddlebrown;
+  border-width: 0.10em;
   background-color: blanchedalmond;
   color: darkgreen;
   font-size: 1em;
+  
 }
 
-/* SOCIAL ICONS */
+/* SOCIAL ICONS for HOME Section */
 #icon {
   float: inherit;
   text-align: center;
   padding: 5, 5, 5, 15;
+}
+
+/* SOCIAL ICONS for CONTACT Section */
+#contactIcon {
+  float: left;
+  padding: 5, 5, 5, 15;
+  text-align: left;
+}
+
+/* Spacing between the Contact section Social Buttons */
+li:not(:last-child) {
+    padding-bottom: 5px;
 }
 
 /* Option to center various objects */
@@ -63,10 +92,6 @@ body {
   text-align: center;
 }
 
-/* Griffy font */
-#griffy {
-  font-family: 'Griffy',cursive;
-}
 
 
 /* **********MAIN CONTENT********* */
@@ -107,11 +132,11 @@ body {
 .well {
   border-color: blanchedalmond;
   border-width: .2em;
-  background-color: rgba(250,235,215,0.8);
+  background-color: rgba(250,235,215,0.9);
   color: darkslategrey;
 }
 
-/* MY WORK SECTION */
+/* PORTDOLIO SECTION */
 /* Background image for MY WORK section */
 .portfolio_pic {
   background: url('/images/dark-wood.jpg');
