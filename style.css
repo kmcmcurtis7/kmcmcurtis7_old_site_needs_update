@@ -1,6 +1,5 @@
 /* NAVIGATION BAR */
 
-
 /* NAVIGATION BAR override Bootstrap for colors */
 /*You can create a custom navbar class, and then reference it to change the navbar without impacting other Bootstrap navbars 
 http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3
@@ -24,10 +23,9 @@ http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-boots
 }
 
 
-
 /* Main BODY colors & font */
 body {
-  font-family: 'Papyrus';
+  font-family: 'avant garde';
   background-color: black;
   color: saddlebrown;
   text-emphasis: 30em;
@@ -46,7 +44,6 @@ body {
   color: darkgreen;
 }
 
-
 /* Option to change object to Blanched Almond color */
 #blchalmond {
   color: blanchedalmond;
@@ -57,34 +54,13 @@ body {
   background-color: transparent;
 }
 
-
 /* Color design for Social Icon buttons */
 .btn {
   border-color: saddlebrown;
   border-width: 0.10em;
   background-color: blanchedalmond;
   color: darkgreen;
-  font-size: 1em;
-  
-}
-
-/* SOCIAL ICONS for HOME Section */
-#icon {
-  float: inherit;
-  text-align: center;
-  padding: 5, 5, 5, 15;
-}
-
-/* SOCIAL ICONS for CONTACT Section */
-#contactIcon {
-  float: left;
-  padding: 5, 5, 5, 15;
-  text-align: left;
-}
-
-/* Spacing between the Contact section Social Buttons */
-li:not(:last-child) {
-    padding-bottom: 5px;
+  font-size: 1em; 
 }
 
 /* Option to center various objects */
@@ -93,10 +69,17 @@ li:not(:last-child) {
 }
 
 
+#secHeading {
+  border-color: saddlebrown;
+  border-width: .2em;
+  background-color: rgba(250,235,215,0.9);
+  color: saddlebrown;
+}
+
 
 /* **********MAIN CONTENT********* */
 
-/* HOME SECTION */
+/* *****HOME SECTION***** */
 /* Background image for HOME section */
 .home_pic {
   background: url('/images/darkwood-desk.jpg');
@@ -117,7 +100,15 @@ li:not(:last-child) {
   vertical-align: middle;
 }
 
-/* ABOUT SECTION */
+/* SOCIAL ICONS for HOME Section */
+#icon {
+  float: inherit;
+  text-align: center;
+  padding: 5, 5, 5, 15;
+}
+
+
+/* *****ABOUT SECTION***** */
 /* Background image for ABOUT section */
 .about_pic {
   background: url('/images/office-couches.jpg');
@@ -128,6 +119,21 @@ li:not(:last-child) {
   padding-bottom: 25;
 }
 
+/* Personal pic for ABOUT section */
+.circular {
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+    border-color: blanchedalmond;
+    border-width: .5em;
+	background: url('images/kelly.png') no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .9);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .9);
+	}
+
 /* Allowing the ABOUT ME paragraph to stand out more */
 .well {
   border-color: blanchedalmond;
@@ -136,7 +142,8 @@ li:not(:last-child) {
   color: darkslategrey;
 }
 
-/* PORTDOLIO SECTION */
+
+/* *****PORTDOLIO SECTION****** */
 /* Background image for MY WORK section */
 .portfolio_pic {
   background: url('/images/dark-wood.jpg');
@@ -148,7 +155,7 @@ li:not(:last-child) {
 }
 
 
-/* CONTACT SECTION */
+/* *****CONTACT SECTION****** */
 /* Background image for Contact section */
 .contact_pic {
   background: url('/images/home-office.jpg');
@@ -157,4 +164,24 @@ li:not(:last-child) {
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 25;
+}
+
+/* SOCIAL ICONS for CONTACT Section */
+#contactIcon {
+  float: left;
+  padding: 5, 5, 5, 15;
+  text-align: left;
+  text-shadow: #444 0 .1em .1em;
+}
+
+/* Spacing between the Contact section Social Buttons */
+li:not(:last-child) {
+    padding-bottom: 5px;
+}
+
+
+/* ******FOOTER****** */
+/* Adding margin for FOOTER content */
+#ftrMargin {
+  margin-left: 5em;
 }
