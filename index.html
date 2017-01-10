@@ -15,11 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
 
     <!-- Include font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/ffdd8da6d0.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Resource style -->
 
@@ -38,7 +40,7 @@
           <span class="icon-bar"></span>
         </button>
         <div>
-          <ul class="nav navbar-nav navbar-left">
+          <ul class="navbar navbar-nav navbar-left">
             <h4><span class="glyphicon glyphicon-grain"></span> KMC <span class="glyphicon glyphicon-grain"></span></h4>
             </div>
         </div>
@@ -58,12 +60,12 @@
       </div><!-- /.container-fluid -->
       </nav>
 
-    <body data-spy="scroll" data-target="#navbar-example">
+    <body data-spy="scroll" data-target="#navbar">
       <div class="container-fluid">
 
         <!-- HOME section -->
 
-        <div data-spy="scroll" data-target="#navbar-example" data-offset="0" class="scrollspy-example">
+        <div data-spy="scroll" data-target="#navbar-example" data-offset="0" class="scrollspy">
           <div id="home">
 
             <div class="home_pic">
@@ -79,50 +81,58 @@
 
                   <h4 id="icon">
                     <a href="https://github.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-github-square fa-lg"></i> Github</a>
+                    <a href="https://www.freecodecamp.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-free-code-camp fa-lg"></i> FreeCodeCamp</a>                    
                     <a href="https://kmcmcurtis7.wordpress.com" class="btn" target=_blank><i class="fa fa-wordpress fa-lg"></i> Wordpress</a>
                     <a href="https://www.linkedin.com/in/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-linkedin-square fa-lg"></i> LinkedIn</a>
                     <a href="https://twitter.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-twitter twitter fa-lg"></i> Twitter</a>
                     <a href="http://codepen.io/kmcmcurtis7/" class="btn" target=_blank><i class="fa fa-codepen fa-lg"></i> Codepen</a>
                   </h4>
-                </div>
+                </div>  <!-- HOME .jumbotron collapse -->
               </div>  <!-- HOME .container collapse -->
-            </div>  
+            </div>  <!-- HOME .home_pic collapse -->
           </div>  <!-- HOME SECTION collapse -->
 
           <!-- ABOUT -->
 
           <div id="about">
             <div class="about_pic">
-              <div class="container">
+              <div class="container-fluid">
                 <div class="row">
                   <div class="panel">
                     <div class="col-md-4 col-md-offset-4">
                       <header>
-                        <h1 id="center"><span class="glyphicon glyphicon-grain"></span><strong> ABOUT  </strong><span class="glyphicon glyphicon-grain"></span></h1>
+                        <div id="secHeading">
+                          <h1 id="center"><span class="glyphicon glyphicon-grain"></span><strong> ABOUT  </strong><span class="glyphicon glyphicon-grain"></span></h1>
+                        </div>
                       </header>
                     </div>
                   </div>  <!-- ABOUT panel collapse -->
                 </div>  <!-- ABOUT row collapse -->
+                
+                
                 <div class="row">
-                  <div class="col-md-6">
+                  
+                  <!-- Added this for spacing -->
+                  <div class="col-md-1"></div>
+                  
+                  <div class="col-md-6 col-md-offset 3">
                     <div class="well well-lg">
-                      <h4>With 14+ years of corporate America experience, I am ready for a change of scenery and new challenges. As an individual with business experience and understanding of coding, I can bring a unique perspective to your projects and communication skills for explaining/training others on the in these areas.</h4>
+                      <h4>With 14+ years of corporate America, I decided to find something I enjoyed and use skills in which I excel. I enjoy solving problems, coding, training others and enpowering those considering technology as a career.</h4>
 
-                      <h4>I have a passion for coding, a drive to learn new technologies and a willingness to learn a new skills quickly.  I believe everyone should have a basic understanding of how websites is created whether they plan on learning to code as a career or not. </h4>
+                      <h4>I enjoy the detail oriented skills needed for coding and see coding as a way to improve and expand my skillsets.  I believe everyone should have a basic understanding of how websites are created whether they plan on learning to code as a career or not. </h4>
 
                       <h4>My current business skills encompass salesforce.com, MS Office Suite (Word, Excel, Outlook, Access, Lync), Crystal Reports, Adobe Writer, Enhanced Cliq (Citrix), CCS (AS400 mainframe), Workstation, NMWB, Umpire , Lotus Notes, Midway, Clipper and Compass.</h4>
 
                       <h4>My current technical skills encompass Ruby on Rails, HTML5, CSS3, Twitter Bootstrap, JSON, Postgres, APIs (AJAX, Google), jQuery, Javascript. Tools used include: Sublime Text, Brackets, Google Dev Tools, Slack and many others.</h4>
 
-                      <h4><em>In my spare time, I am working on my Front-End Developer certificate via freecodecamp.com.</em></h4>
+                      <h4><em>I am currently a teacher assistant for Tech Talent South and Girl Develop It - RDU. In my spare time, I am also working on my Front-End Developer certificate via freecodecamp.com.</em></h4>
                     </div>
                   </div>
 
-                  <div class="col-md-2 col-md-offset-2">
+                  <div class="col-md-2 col-md-offset-1">
                     <div class="circular"></div>
                   </div>
-                </div>
-
+                </div>  <!-- ABOUT .row collapse -->
               </div>  <!-- ABOUT .container collapse -->
             </div>  <!-- ABOUT .about_pic collapse -->
           </div>  <!-- ABOUT SECTION collapse -->
@@ -131,13 +141,15 @@
           <!-- MY PORTFOLIO -->
           <div id="portfolio">
             <div class="portfolio_pic">
-              <div class="container">
+              <div class="container-fluid">
 
                 <div class="row">
                   <div class="panel panel-default">
                     <div class="col-md-4 col-md-offset-4">
                       <header>
-                        <h1 id="center"><span class="glyphicon glyphicon-grain"></span> <strong> PORTFOLIO </strong><span class="glyphicon glyphicon-grain"></span></h1>
+                        <div id="secHeading">
+                          <h1 id="center"><span class="glyphicon glyphicon-grain"></span> <strong> PORTFOLIO </strong><span class="glyphicon glyphicon-grain"></span></h1>
+                        </div>
                       </header>
 
                       <br>
@@ -159,6 +171,16 @@
                     </div>  <!-- FCC Tribute Website section .col-sm-5 col-md-3 collapse -->
 
                     <div class="col-sm-5 col-md-3">
+                      <a href="http://codepen.io/kmcmcurtis7/pen/oLQmbb/" class="thumbnail">
+                        <img src="/images/randomQuoteMachine.jpg" alt="#">
+                        <div class="caption">
+                          <h3>Random Quote Machine</h3>
+                          <p>Bootstrap, HTML, CSS, jQuery and JavaScript</p>
+                        </div>
+                      </a>
+                    </div>   <!--  section collapse -->
+
+                    <div class="col-sm-5 col-md-3">
                       <a href="#" class="thumbnail">
                         <img src="#" alt="#">
                         <div class="caption">
@@ -177,10 +199,8 @@
                         </div>
                       </a>
                     </div>   <!--  section collapse -->
-
                   </div>  <!-- PORTFOLIO .center collapse -->
                 </div>  <!-- 2nd PORTFOLIO .row object for projects display collaspe -->
-
               </div>  <!-- PORTFOLIO container collapse -->
             </div>   <!-- PORTFOLIO .portfolio_pic collapse -->
           </div>  <!-- PORTFOLIO - MY WORK SECTION collapse -->
@@ -188,30 +208,38 @@
           <!--CONTACT -->
           <div id="contact">
             <div class="contact_pic">
-              <div class="container">
+              <div class="container-fluid">
                 <div class="row">
                   <div class="panel">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-4 col-md-offset-4">
                       <header>
-                        <h1 id="center"><span class="glyphicon glyphicon-grain"></span><strong> CONTACT </strong><span class="glyphicon glyphicon-grain"></span></h1>
+                        <div id="secHeading">
+                          <h1 id="center"><span class="glyphicon glyphicon-grain"></span><strong> CONTACT </strong><span class="glyphicon glyphicon-grain"></span></h1>
+                        </div>
                       </header>
+                    </div>  <!-- CONTACT .col-md-4 col-md-offset-4 collapse -->
 
-                      <div class="col-md-5">
+                    <div>
+
+                      <div class="col-md-5 col-md-offset-1">
                         <div class="well well-lg">
                           <div id="center">
                             <h5><strong>I would love to hear from you!</strong></h5>
-                            <h5><strong>Send me an email about website development or just to say hi!</strong></h5>
-                            <h4 id="center"><span><a href="mailto:kmcmcurtis7@gmail.com", class="btn btn-default">kmcmcurtis7@gmail.com</a></span></h4>
+                            <h5><strong>Shoot me an email to say hi!</strong></h5>
+                            <h5 id="center"><a href="mailto:kelly@kel-mc.net", class="btn btn-default">kelly@kel-mc.net</a></h5>
                           </div>
                         </div>  <!--  Contact .well well-lg collapse  -->
-                      </div>  <!--  Contact .col-md-5 collapse  -->
+                      </div>  <!--  Contact .col-md-5 col-md-offset-1 collapse  -->
 
                       <!-- SOCIAL ICONS -->
 
-                      <div class="col-md-3 col-md-offset-4">
+                      <div class="col-md-6">
                         <h4 id="contactIcon">
                           <ul style="list-style-type:none">
+
                             <li><a href="https://github.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-github-square fa-lg"></i> Github</a></li>
+
+                            <li><a href="https://www.freecodecamp.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-free-code-camp fa-lg"></i> FreeCodeCamp</a></li>
 
                             <li><a href="https://kmcmcurtis7.wordpress.com" class="btn" target=_blank><i class="fa fa-wordpress fa-lg"></i> Wordpress</a></li>
 
@@ -222,15 +250,13 @@
                             <li><a href="http://codepen.io/kmcmcurtis7/" class="btn" target=_blank><i class="fa fa-codepen fa-lg"></i> Codepen</a></li>
                           </ul>
                         </h4>
-
                       </div>  <!-- CONTACT Social Icons .col-md-3 col-md-offset-4 collapse -->
-                    </div>  <!-- CONTACT .col-md-8 col-md-offset-2 collapse -->
+                    </div>
                   </div>  <!-- CONTACT .panel collapse -->
                 </div>  <!-- CONTACT .row collapse -->
               </div>  <!-- CONTACT .container collapse -->
             </div>    <!-- CONTACT .contact_pic collapse -->
           </div>  <!-- CONTACT SECTION collapse -->
-
         </div>  <!-- scrollspy collapse -->
       </div>   <!-- BODY .container-fluid collapse -->
 
@@ -251,7 +277,7 @@
 
           <div class="row">
             <div class="center">
-              <h6>Created and coded by Kelly M Curtis March 2016.</h6>
+              <h6>Original created in March 2016 and continuously being improved by Kelly M Curtis.</h6>
             </div>
           </div>
         </div>

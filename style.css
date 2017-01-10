@@ -1,3 +1,13 @@
+
+html {
+  box-sizing: border-box;
+  font-family: 'Lemonada', cursive;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* NAVIGATION BAR */
 
 /* NAVIGATION BAR override Bootstrap for colors */
@@ -6,47 +16,60 @@ http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-boots
 */
 
 .navbar-custom {
-    background-color: rgba(250,235,215,0.9);
-    color: saddlebrown;
-    border-radius:0;
+  background-color: rgba(30, 16, 44, 0.8);
+  border-radius: 0;
+  color: whitesmoke;
+  font-family: 'Lemonada';
 }
 
-.navbar-custom .navbar-nav > li > a {
-    color: saddlebrown;
+.navbar .navbar-nav > li > a, .nav .nav-tabs > li > a {
+  color: whitesmoke;
+  font-family: 'Lemonada';
 }
-.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: saddlebrown;
-    background-color:transparent;
+
+.nav-tabs > li > a {
+  color: whitesmoke;
+  font-family: 'Lemonada';
+  font-size: 1.25em;
 }
+
+.navbar .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+ background-color: transparent;
+  color: whitesmoke;
+  font-family: 'Lemonada';
+}
+
 .navbar-custom .navbar-brand {
-    color: saddlebrown;
+  color: whitesmoke;
+  font-family: 'Lemonada';
+}
+
+@media (max-width: 768px) { .nav-tabs > li { float: none; border: 1px solid #dddddd; } .nav-tabs > li.active { background: #eeeeee; } .nav-tabs > li.active > a { border: 1px solid transparent; } .nav > li > a:hover, .nav > li > a:focus, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { 
+  background: none; 
+  border: 1px solid transparent; } 
 }
 
 
 /* Main BODY colors & font */
 body {
-  font-family: 'avant garde';
+  font-family: 'Lemonada';
   background-color: black;
-  color: saddlebrown;
-  text-emphasis: 30em;
+  color: whitesmoke;
+  text-emphasis: 30rem;
   padding-top: 7em;
   padding-bottom: 1em;
   font-size: 130%;
+  line-height: 1.5;
 }
 
 /* Allowing scrollspy flexibility */
-.scrollspy-example {
+.scrollspy {
     position: relative;
 }
 
 /* Change the color of the grain leaf icon to green */
 .glyphicon {
-  color: darkgreen;
-}
-
-/* Option to change object to Blanched Almond color */
-#blchalmond {
-  color: blanchedalmond;
+  color: whitesmoked
 }
 
 /* Option to change objects to transparent */
@@ -56,9 +79,9 @@ body {
 
 /* Color design for Social Icon buttons */
 .btn {
-  border-color: saddlebrown;
+  border-color: whitesmoke;
   border-width: 0.10em;
-  background-color: blanchedalmond;
+  background-color: white;
   color: darkgreen;
   font-size: 1em; 
 }
@@ -68,12 +91,14 @@ body {
   text-align: center;
 }
 
-
+/* Coloring & sizing for each Section Title */
 #secHeading {
-  border-color: saddlebrown;
-  border-width: .2em;
-  background-color: rgba(250,235,215,0.9);
-  color: saddlebrown;
+/*  border-color: whitesmoke;*/
+/*  border-radius: 30px;*/
+/*  border-width: 3em;*/
+/*  background-color: rgba(30, 16, 44, 0.8);*/
+  color: whitesmoke;
+  padding: 5px;
 }
 
 
@@ -84,7 +109,7 @@ body {
 .home_pic {
   background: url('/images/darkwood-desk.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   padding-top: 25;
@@ -93,11 +118,12 @@ body {
 
 .jumbotron {
   height: 350px;
-  color: saddlebrown;
-  text-shadow: #444 0 .3em .3em;
-  background: rgba(250,235,215,0.8);
+  color: whitesmoke;
+/*  text-shadow: #444 0 .2em .2em;*/
+  background: transparent;
   font-size: 50%;
   vertical-align: middle;
+  line-height: 1.5;
 }
 
 /* SOCIAL ICONS for HOME Section */
@@ -111,7 +137,7 @@ body {
 /* *****ABOUT SECTION***** */
 /* Background image for ABOUT section */
 .about_pic {
-  background: url('/images/office-couches.jpg');
+  background: url('/images/code.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -126,9 +152,10 @@ body {
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-    border-color: blanchedalmond;
+    border-color: whitesmoke;
     border-width: .5em;
 	background: url('images/kelly.png') no-repeat;
+    background-position: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, .9);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .9);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .9);
@@ -136,10 +163,12 @@ body {
 
 /* Allowing the ABOUT ME paragraph to stand out more */
 .well {
-  border-color: blanchedalmond;
+  border-color: whitesmoke;
   border-width: .2em;
-  background-color: rgba(250,235,215,0.9);
-  color: darkslategrey;
+  background-color: rgba(30, 16, 44, 0.8);
+  color: whitesmoke;
+  line-height: inherit;
+  padding: inherit;
 }
 
 
@@ -148,7 +177,7 @@ body {
 .portfolio_pic {
   background: url('/images/dark-wood.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 25;
@@ -158,9 +187,9 @@ body {
 /* *****CONTACT SECTION****** */
 /* Background image for Contact section */
 .contact_pic {
-  background: url('/images/home-office.jpg');
+  background: url('/images/bluecode.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 25;
@@ -171,7 +200,6 @@ body {
   float: left;
   padding: 5, 5, 5, 15;
   text-align: left;
-  text-shadow: #444 0 .1em .1em;
 }
 
 /* Spacing between the Contact section Social Buttons */
