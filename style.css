@@ -20,29 +20,25 @@ http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-boots
   background-color: rgba(30, 16, 44, 0.8);
   border-radius: 0;
   color: whitesmoke;
-  font-family: 'Lemonada';
+  /*  font-family: 'Lemonada';*/
 }
 
 .navbar .navbar-nav > li > a, .nav .nav-tabs > li > a {
   color: whitesmoke;
-  font-family: 'Lemonada';
 }
 
 .nav-tabs > li > a {
   color: whitesmoke;
-  font-family: 'Lemonada';
   font-size: 1.25em;
 }
 
 .navbar .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
- background-color: transparent;
+  background-color: transparent;
   color: whitesmoke;
-  font-family: 'Lemonada';
 }
 
 .navbar-custom .navbar-brand {
   color: whitesmoke;
-  font-family: 'Lemonada';
 }
 
 @media (max-width: 768px) { .nav-tabs > li { float: none; border: 1px solid #dddddd; } .nav-tabs > li.active { background: #eeeeee; } .nav-tabs > li.active > a { border: 1px solid transparent; } .nav > li > a:hover, .nav > li > a:focus, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { 
@@ -58,19 +54,20 @@ body {
   color: whitesmoke;
   text-emphasis: 30rem;
   padding-top: 7em;
-  padding-bottom: 1em;
+  padding-bottom: 1rem;
   font-size: 130%;
   line-height: 1.5;
 }
 
 /* Allowing scrollspy flexibility */
 .scrollspy {
-    position: relative;
+  position: relative;
 }
 
 /* Change the color of the grain leaf icon to green */
 .glyphicon {
-  color: whitesmoked
+  color: whitesmoked;
+  margin-right: .5rem;
 }
 
 /* Option to change objects to transparent */
@@ -79,7 +76,8 @@ body {
 }
 
 h4 {
-  font-size: 1.3em;
+  font-size: 1.4rem;
+  line-height: inherit;
 }
 
 /* Color design for Social Icon buttons */
@@ -88,9 +86,15 @@ h4 {
   border-width: 0.10em;
   background-color: white;
   color: darkgreen;
-  display: inline-flex;
-  padding: .5em;
+  margin-top: .5rem;
+  min-width: 180px;
+  padding: .5rem;
   position: relative;
+  text-align: left;
+}
+
+.well {
+  min-width: 220px;
 }
 
 /* Option to center various objects */
@@ -101,8 +105,8 @@ h4 {
 /* Coloring & sizing for each Section Title */
 #secHeading {
   color: whitesmoke;
-  font-size: 1em;
-  padding: 1em;
+  font-size: 1rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -124,18 +128,17 @@ h4 {
 .jumbotron {
   height: 65em;
   color: whitesmoke;
-/*  text-shadow: #444 0 .2em .2em;*/
+  /*  text-shadow: #444 0 .2em .2em;*/
   background: transparent;
   font-size: 50%;
   vertical-align: middle;
   line-height: 1.5;
 }
 
-/* SOCIAL ICONS for HOME Section */
+/* SOCIAL ICONS for HOME Section  */
 #icon {
   float: inherit;
   text-align: center;
-  padding: 5, 5, 5, 15;
 }
 
 
@@ -152,19 +155,19 @@ h4 {
 
 /* Personal pic for ABOUT section */
 .circular {
-	width: 200px;
-	height: 200px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-    border-color: whitesmoke;
-    border-width: .5em;
-	background: url('images/kelly_circle.png') no-repeat;
-    background-position: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .9);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .9);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .9);
-	}
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-color: whitesmoke;
+  border-width: .5em;
+  background: url('images/kelly_circle.png') no-repeat;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .9);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .9);
+}
 
 /* Allowing the ABOUT ME paragraph to stand out more */
 .well {
@@ -203,18 +206,17 @@ h4 {
 /* SOCIAL ICONS for CONTACT Section */
 #contactIcon {
   float: left;
-  padding: 5, 5, 5, 15;
-  text-align: left;
+  text-align: justify;
 }
 
 /* Spacing between the Contact section Social Buttons */
 li:not(:last-child) {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 
 /* ******FOOTER****** */
 /* Adding margin for FOOTER content */
 #ftrMargin {
-  margin-left: 5em;
+  margin-left: 5rem;
 }
