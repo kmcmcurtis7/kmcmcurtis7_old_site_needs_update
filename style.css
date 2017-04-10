@@ -87,14 +87,10 @@ h4 {
   background-color: white;
   color: darkgreen;
   margin-top: .5rem;
-  min-width: 180px;
+  min-width: 170px;
   padding: .5rem;
   position: relative;
   text-align: left;
-}
-
-.well {
-  min-width: 220px;
 }
 
 /* Option to center various objects */
@@ -176,6 +172,7 @@ h4 {
   background-color: rgba(30, 16, 44, 0.8);
   color: whitesmoke;
   line-height: inherit;
+  min-width: 220px;
   padding: inherit;
 }
 
