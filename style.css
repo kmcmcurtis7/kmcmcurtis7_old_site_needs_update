@@ -4,82 +4,72 @@ html {
   box-sizing: border-box;
   font-family: 'Lemonada', cursive;
 }
-
+body {  
+  min-width:550px; 
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 /* NAVIGATION BAR */
-
 /* NAVIGATION BAR override Bootstrap for colors */
 /*You can create a custom navbar class, and then reference it to change the navbar without impacting other Bootstrap navbars 
 http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3
 */
-
 .navbar-custom {
   background-color: rgba(30, 16, 44, 0.8);
   border-radius: 0;
   color: whitesmoke;
   /*  font-family: 'Lemonada';*/
 }
-
 .navbar .navbar-nav > li > a, .nav .nav-tabs > li > a {
   color: whitesmoke;
 }
-
 .nav-tabs > li > a {
   color: whitesmoke;
   font-size: 1.25em;
 }
-
 .navbar .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
   background-color: transparent;
   color: whitesmoke;
 }
-
 .navbar-custom .navbar-brand {
   color: whitesmoke;
 }
-
 @media (max-width: 768px) { .nav-tabs > li { float: none; border: 1px solid #dddddd; } .nav-tabs > li.active { background: #eeeeee; } .nav-tabs > li.active > a { border: 1px solid transparent; } .nav > li > a:hover, .nav > li > a:focus, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { 
   background: none; 
   border: 1px solid transparent; } 
 }
-
-
 /* Main BODY colors & font */
 body {
   font-family: 'Lemonada';
   background-color: black;
-  color: whitesmoke;
+  color: white;
   text-emphasis: 30rem;
   padding-top: 7em;
   padding-bottom: 1rem;
   font-size: 130%;
   line-height: 1.5;
 }
-
 /* Allowing scrollspy flexibility */
 .scrollspy {
   position: relative;
 }
-
 /* Change the color of the grain leaf icon to green */
 .glyphicon {
   color: whitesmoked;
   margin-right: .5rem;
 }
-
 /* Option to change objects to transparent */
 #transparent {
   background-color: transparent;
 }
-
+#whsmoke {
+  color: whitesmoke;
+}
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: inherit;
 }
-
 /* Color design for Social Icon buttons */
 .btn {
   border-color: whitesmoke;
@@ -92,12 +82,10 @@ h4 {
   position: relative;
   text-align: left;
 }
-
 /* Option to center various objects */
 #center {
   text-align: center;
 }
-
 /* Coloring & sizing for each Section Title */
 #secHeading {
   color: whitesmoke;
@@ -105,7 +93,6 @@ h4 {
   padding: 1rem;
   text-align: center;
 }
-
 
 /* **********MAIN CONTENT********* */
 
@@ -120,7 +107,6 @@ h4 {
   padding-top: 25;
   padding-bottom: 25;
 }
-
 .jumbotron {
   height: 65em;
   color: whitesmoke;
@@ -130,14 +116,11 @@ h4 {
   vertical-align: middle;
   line-height: 1.5;
 }
-
 /* SOCIAL ICONS for HOME Section  */
 #icon {
   float: inherit;
   text-align: center;
 }
-
-
 /* *****ABOUT SECTION***** */
 /* Background image for ABOUT section */
 .about_pic {
@@ -148,11 +131,10 @@ h4 {
   background-attachment: fixed;
   padding-bottom: 25;
 }
-
 /* Personal pic for ABOUT section */
 .circular {
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
@@ -164,7 +146,6 @@ h4 {
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .9);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .9);
 }
-
 /* Allowing the ABOUT ME paragraph to stand out more */
 .well {
   border-color: whitesmoke;
@@ -175,8 +156,6 @@ h4 {
   min-width: 220px;
   padding: inherit;
 }
-
-
 /* *****PORTDOLIO SECTION****** */
 /* Background image for MY WORK section */
 .portfolio_pic {
@@ -187,8 +166,6 @@ h4 {
   background-attachment: fixed;
   padding-bottom: 25;
 }
-
-
 /* *****CONTACT SECTION****** */
 /* Background image for Contact section */
 .contact_pic {
@@ -199,19 +176,18 @@ h4 {
   background-attachment: fixed;
   padding-bottom: 25;
 }
-
 /* SOCIAL ICONS for CONTACT Section */
 #contactIcon {
   float: left;
   text-align: justify;
 }
-
+.panel {
+  border: none;
+}
 /* Spacing between the Contact section Social Buttons */
 li:not(:last-child) {
   padding-bottom: 5px;
 }
-
-
 /* ******FOOTER****** */
 /* Adding margin for FOOTER content */
 #ftrMargin {
