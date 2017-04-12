@@ -2,31 +2,31 @@
 html {
   background-color: black;
   box-sizing: border-box;
-  font-family: 'Lemonada', cursive;
 }
-body {  
-  min-width:550px; 
+body {
+  min-width:550px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 /* NAVIGATION BAR */
 /* NAVIGATION BAR override Bootstrap for colors */
-/*You can create a custom navbar class, and then reference it to change the navbar without impacting other Bootstrap navbars 
+/*You can create a custom navbar class, and then reference it to change the navbar without impacting other Bootstrap navbars
 http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3
 */
 .navbar-custom {
-  background-color: rgba(30, 16, 44, 0.8);
+  background-color: rgba(0, 137, 145, 0.8);
+  border: none;
   border-radius: 0;
   color: whitesmoke;
-  /*  font-family: 'Lemonada';*/
+  font-family: 'Josefin Sans', sans-serif;
 }
 .navbar .navbar-nav > li > a, .nav .nav-tabs > li > a {
   color: whitesmoke;
 }
 .nav-tabs > li > a {
   color: whitesmoke;
-  font-size: 1.25em;
+  font-size: 1.35em;
 }
 .navbar .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
   background-color: transparent;
@@ -35,13 +35,13 @@ http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-boots
 .navbar-custom .navbar-brand {
   color: whitesmoke;
 }
-@media (max-width: 768px) { .nav-tabs > li { float: none; border: 1px solid #dddddd; } .nav-tabs > li.active { background: #eeeeee; } .nav-tabs > li.active > a { border: 1px solid transparent; } .nav > li > a:hover, .nav > li > a:focus, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { 
-  background: none; 
-  border: 1px solid transparent; } 
+@media (max-width: 768px) { .nav-tabs > li { float:inherit; border: 1px solid #dddddd; } .nav-tabs > li.active { background: #eeeeee; } .nav-tabs > li.active > a { border: 1px solid transparent; } .nav > li > a:hover, .nav > li > a:focus, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background: none;
+  border: 1px solid transparent; }
 }
 /* Main BODY colors & font */
 body {
-  font-family: 'Lemonada';
+  font-family: 'Playfair Display', serif;
   background-color: black;
   color: white;
   text-emphasis: 30rem;
@@ -63,6 +63,10 @@ body {
 #transparent {
   background-color: transparent;
 }
+/*Remove panel borders for cleaner design */
+.panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
+    border: none;
+}
 #whsmoke {
   color: whitesmoke;
 }
@@ -75,12 +79,14 @@ h4 {
   border-color: whitesmoke;
   border-width: 0.10em;
   background-color: white;
-  color: darkgreen;
+  color: #2c0900;
+  font-size: 1.5rem;
   margin-top: .5rem;
   min-width: 170px;
   padding: .5rem;
   position: relative;
-  text-align: left;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 /* Option to center various objects */
 #center {
@@ -92,6 +98,7 @@ h4 {
   font-size: 1rem;
   padding: 1rem;
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* **********MAIN CONTENT********* */
@@ -115,6 +122,7 @@ h4 {
   font-size: 50%;
   vertical-align: middle;
   line-height: 1.5;
+  font-family: 'Josefin Sans', sans-serif;
 }
 /* SOCIAL ICONS for HOME Section  */
 #icon {
@@ -133,14 +141,14 @@ h4 {
 }
 /* Personal pic for ABOUT section */
 .circular {
-  width: 230px;
-  height: 230px;
+  width: 240px;
+  height: 240px;
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   border-color: whitesmoke;
   border-width: .5em;
-  background: url('images/kelly_circle.png') no-repeat;
+  background: url('images/profile_pic.jpg') no-repeat;
   background-position: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, .9);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .9);
@@ -150,8 +158,9 @@ h4 {
 .well {
   border-color: whitesmoke;
   border-width: .2em;
-  background-color: rgba(30, 16, 44, 0.8);
-  color: whitesmoke;
+  background-color: rgba(106, 237, 244, 1.0);
+  color: #2c0900;
+  font-size: 1.6rem;
   line-height: inherit;
   min-width: 220px;
   padding: inherit;
@@ -159,7 +168,7 @@ h4 {
 /* *****PORTDOLIO SECTION****** */
 /* Background image for MY WORK section */
 .portfolio_pic {
-  background: url('/images/dark-wood.jpg');
+  background: url('/images/darkwood-desk.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -169,7 +178,7 @@ h4 {
 /* *****CONTACT SECTION****** */
 /* Background image for Contact section */
 .contact_pic {
-  background: url('/images/bluecode.jpg');
+  background: url('/images/code.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -181,16 +190,16 @@ h4 {
   float: left;
   text-align: justify;
 }
-.panel {
-  border: 0;
-  box-shadow: none;
-}
 /* Spacing between the Contact section Social Buttons */
 li:not(:last-child) {
   padding-bottom: 5px;
 }
 /* ******FOOTER****** */
+.footer {
+  font-family: 'Josefin Sans', sans-serif;
+}
 /* Adding margin for FOOTER content */
 #ftrMargin {
   margin-left: 5rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
