@@ -1,80 +1,67 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> <!-- Modernizr -->
-    <!-- Latest compiled and minified Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="application.js"></script>
+
     <!-- Include font-awesome -->
     <script src="https://use.fontawesome.com/ffdd8da6d0.js"></script>
-    <!-- Latest compiled and minified Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 2017 Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- 2019 Latest compiled and minified CSS -->
+   <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Resource style -->
+
   </head>
 
-  <!-- NAVIGATION BAR -->
-  <nav class="navbar navbar-custom navbar-fixed-top navbar-lg">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div>
-          <ul class="navbar navbar-nav navbar-left">
-            <h3><span class="glyphicon glyphicon-grain"></span> KMC <span class="glyphicon glyphicon-grain"></span></h3>
-            </div>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
-          <h5> 
-            <ul class="nav nav-tabs navbar-right role=tablist">
-              <li><a href="#home">Home<span class="sr-only">(current)</span></a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </h5>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-      </nav>
-    <body data-spy="scroll" data-target="#navbar">
+    <body>
       <div class="container-fluid">
 
         <!-- HOME section -->
+
         <div data-spy="scroll" data-target="#navbar-example" data-offset="0" class="scrollspy">
           <div id="home">
             <div class="home_pic">
               <div class="container">
                 <div class="jumbotron text-center">
-                  <h1><span class="glyphicon glyphicon-grain"></span>KELLY M CURTIS<span class="glyphicon glyphicon-grain"></span></h1>
-                  <h3><strong>efficiency guru | forever learning  | technology advocate</strong></h3>
+                  <h1>KELLY M CURTIS</h1>
+                  <h3><strong>Efficiency Guru | Thinkful Data Science Student  | Udacity Scholar</strong></h3>
+
                   <hr>
+
                   <!-- Social Icons in HOME section -->
                   <div class="row">
                     <h4 id="icon">
                       <a href="https://github.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-github-square fa-2x"></i>&nbsp; Github</a>
-                      <a href="https://www.freecodecamp.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-free-code-camp fa-2x"></i>&nbsp; FreeCodeCamp</a>
+                      <!-- <a href="https://www.freecodecamp.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-free-code-camp fa-2x"></i>&nbsp; FreeCodeCamp</a> -->
                       <a href="http://codepen.io/kmcmcurtis7/" class="btn" target=_blank><i class="fa fa-codepen fa-2x"></i>&nbsp; Codepen</a>
-                      <!--                      <a href="https://kmcmcurtis7.wordpress.com" class="btn" target=_blank><i class="fa fa-wordpress fa-2x"></i>&nbsp; Wordpress</a>-->
+                      <!-- <a href="https://kmcmcurtis7.wordpress.com" class="btn" target=_blank><i class="fa fa-wordpress fa-2x"></i>&nbsp; Wordpress</a> -->
                       <a href="https://www.linkedin.com/in/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-linkedin-square fa-2x"></i>&nbsp; LinkedIn</a>
                       <a href="https://twitter.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-twitter twitter fa-2x"></i>&nbsp; Twitter</a>
                     </h4>
                   </div>
                 </div>  <!-- HOME .jumbotron collapse -->
-                <div id="about"></div>  <!-- Scroll Spy for navbar -->
               </div>  <!-- HOME .container collapse -->
             </div>  <!-- HOME .home_pic collapse -->
           </div>  <!-- HOME SECTION collapse -->
 
           <!-- ABOUT -->
+
+          <div id="about">
             <div class="about_pic">
               <div class="container-fluid">
                 <div class="row">
@@ -82,90 +69,106 @@
                     <div class="col-xs-4 col-xs-offset-4">
                       <header>
                         <div id="secHeading">
-                          <h1><span class="glyphicon glyphicon-grain"></span><strong>ABOUT</strong><span class="glyphicon glyphicon-grain"></span></h1>
+                          <h1><strong>ABOUT</strong></h1>
                         </div>
                       </header>
                     </div>
                   </div>  <!-- ABOUT panel collapse -->
                 </div>  <!-- ABOUT row collapse -->
+
+
                 <div class="row">
+
                   <!-- Added this for spacing -->
                   <div class="col-md-1"></div>
+
                   <div class="col-xs-6 col-xs-offset 3">
                     <div class="well well-xs">
-                      <h4>With 14+ years of corporate America experience, I am ready for a change of scenery and new challenges. As an individual with business experience and understanding of coding, I can bring a unique perspective to your projects and communication skills for explaining/training others on the in these areas.
+                      <h4>I am a data scientist in training with Thinkful looking to expand my skills. I am detail-oriented from working in commercial insurance underwriting for many years and willing to learn new industries. I relish solving problems, helping others, and making processes efficient. I believe you can never learn enough and you should always try to look at a question from all perspectives.</h4>
 
-                        <h4> I have a drive to learn new technologies and a willingness to learn a new skills quickly. I believe everyone should have a basic understanding of technology basics whether or not they are pursuing a technology career.</h4>
-                      <h4>I enjoy detail oriented skills needed for coding and see coding as a way to increase my skillsets.  I believe everyone should have a basic understanding of how websites are created whether they plan on learning to code as a career or not.</h4>
-                      <h4>Though my coding skills are not spectacular in anyway, they have expanded my horizon and allow me to bridge the conversation gap between developers and end-users.  An area where many are needed, but few are able to work.</h4>
-                      <h4>In my spare time, I continue to learn more technical skills via the wonderful, all-knowing and free internet courses(some I have paid for too).  I am also pursuing a Data Science via Udacity</h4>
-                        
-                          <h4>My current business skills encompass salesforce.com, MS Office Suite (Word, Excel, Outlook, Access, Lync), Crystal Reports, Adobe Writer, and Salesforce.</h4>
+                      <h4>My current business skills encompass salesforce.com, MS Office Suite (Word, Excel, Outlook, Access, Lync), Crystal Reports, Adobe Writer, Enhanced Cliq (Citrix), CCS (AS400 mainframe).</h4>
 
-                        <h4>My current technical skills encompass HTML5, CSS3, Python, Tableau, SQL, Twitter Bootstrap, JSON, Postgres, APIs (AJAX, Google), jQuery, Javascript. Tools used include: Sublime Text, Brackets, Google Dev Tools, Slack and many others.</h4>
+                      <h4>My current technical skills encompass Python, Tableau, Postgresql, SQL Lite, HTML5, CSS3,  and Twitter Bootstrap.   Tools used include: Jupyter Notebooks, Sublime Text, Brackets, and Slack.</h4>
                     </div>
                   </div>
+
                   <div class="col-xs-2 col-xs-offset-1">
                     <div class="circular"></div>
                   </div>
                 </div>  <!-- ABOUT .row collapse -->
-                <div id="portfolio"></div>  <!-- Scroll Spy for navbar -->
               </div>  <!-- ABOUT .container collapse -->
-              
             </div>  <!-- ABOUT .about_pic collapse -->
+          </div>  <!-- ABOUT SECTION collapse -->
+
 
           <!-- MY PORTFOLIO -->
+          <div id="portfolio">
             <div class="portfolio_pic">
               <div class="container-fluid">
+
                 <div class="row">
-                  <div class="panel">
+                  <div class="panel panel-default">
                     <div class="col-xs-4 col-xs-offset-4">
                       <header>
                         <div id="secHeading">
-                          <h1><span class="glyphicon glyphicon-grain"></span><strong>PORTFOLIO</strong><span class="glyphicon glyphicon-grain"></span></h1>
+                          <h1><strong>PORTFOLIO</strong></h1>
                         </div>
                       </header>
                       <br>
                     </div>   <!-- PORTFOLIO .col-xs-4 col-xs-offset-4  -->
                   </div>   <!-- PORTFOLIO .panel panel-default collapse -->
                 </div>   <!-- 1ST MY PORTFOLIO .row collapse -->
+
+                 <div class="col-sm-5 col-md-3">
+                      <a href="#" class="thumbnail">
+                        <img src="#" alt="#">
+                        <div class="caption">
+                          <h3>Future FreeCodeCamp Project</h3>
+                          <p> </p>
+                        </div>
+                      </a>
+                    </div>   <!--  section collapse -->
+
+                    <div class="col-sm-5 col-md-3">
+                      <a href="#" class="thumbnail">
+                        <img src="#" alt="#">
+                        <div class="caption">
+                          <h3>Future FreeCodeCamp Project</h3>
+                          <p> </p>
+                        </div>
+                      </a>
+                    </div>   <!--  section collapse -->
+                
                 <div class="row">   
                   <div id="center">
                     <div class="col-sm-5 col-md-3">
                       <a href="http://codepen.io/kmcmcurtis7/pen/dGLYRZ" class="thumbnail">
                         <img src="/images/ann_frank.jpg" alt="Anne Frank Tribute">
                         <div class="caption">
-                          <h3>Tribute Project - Anne Frank</h3>
+                          <h3>Tribute Project - Anne Frank - FreeCodeCamp</h3>
                           <p>Bootstrap, HTML and CSS</p>
                         </div>
                       </a>
                     </div>  <!-- FCC Tribute Website section .col-sm-5 col-md-3 collapse -->
+
                     <div class="col-sm-5 col-md-3">
                       <a href="http://codepen.io/kmcmcurtis7/pen/oLQmbb/" class="thumbnail">
                         <img src="/images/randomQuoteMachine.jpg" alt="#">
                         <div class="caption">
-                          <h3>Random Quote Machine</h3>
+                          <h3>Random Quote Machine  FreeCodeCamp</h3>
                           <p>Bootstrap, HTML, CSS, jQuery and JavaScript</p>
                         </div>
                       </a>
                     </div>   <!--  section collapse -->
-                    <div class="col-sm-5 col-md-3">
-                      <a href="#" class="thumbnail">
-                        <img src="#" alt="#">
-                        <div class="caption">
-                          <h3>Future Project</h3>
-                          <p> </p>
-                        </div>
-                      </a>
-                    </div>   <!--  section collapse -->
+
                   </div>  <!-- PORTFOLIO .center collapse -->
                 </div>  <!-- 2nd PORTFOLIO .row object for projects display collaspe -->
-                <div id="contact"></div>  <!-- Scroll Spy for navbar -->
               </div>  <!-- PORTFOLIO container collapse -->
             </div>   <!-- PORTFOLIO .portfolio_pic collapse -->
+          </div>  <!-- PORTFOLIO - MY WORK SECTION collapse -->
 
           <!--CONTACT -->
-          
+          <div id="contact">
             <div class="contact_pic">
               <div class="container-fluid">
                 <div class="row">
@@ -173,31 +176,34 @@
                     <div class="col-xs-4 col-xs-offset-4">
                       <header>
                         <div id="secHeading">
-                          <h1><span class="glyphicon glyphicon-grain"></span><strong>CONTACT</strong><span class="glyphicon glyphicon-grain"></span></h1>
+                          <h1><strong>CONTACT</strong></h1>
                         </div>
                       </header>
                     </div>  <!-- CONTACT .col-sm-4 col-sm-offset-4 collapse -->
+
                     <div>
-                      <div class="col-xs-6 col-xs-offset-1">
+
+                      <div class="col-xs-5 col-xs-offset-1">
                         <div class="well well-xs">
                           <div id="center">
-                            <p><strong>Drop an email to say hi!</strong></p>
-                            <p><strong>I would love to your thoughts on technology or any bad puns!</strong></p>
-                            <p><a href="mailto:kelly@kel-mc.net", class="btn btn-default">kelly</a></p>
+                            <p><strong>I would love to hear from you!</strong></p>
+                            <p><strong>Shoot me an email to say hi!</strong></p>
+                            <p><a href="mailto:kelly@kmcmcurtis7@icloud.com", class="btn btn-default">Send Email!</a></p>
                           </div>
                         </div>  <!--  Contact .well well-xs collapse  -->
                       </div>  <!--  Contact .col-xs-5 col-xs-offset-1 collapse  -->
 
                       <!-- SOCIAL ICONS -->
-                      <div class="col-xs-5">
+                      <div class="col-xs-6">
                         <h4 id="contactIcon">
                           <ul style="list-style-type:none">
+
                             <li><a href="https://github.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-github-square fa-2x"></i>&nbsp; Github</a></li>
-                            <li><a href="https://www.freecodecamp.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-free-code-camp fa-2x"></i>&nbsp; FreeCodeCamp</a></li>
+                           <!--  <li><a href="https://www.freecodecamp.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-free-code-camp fa-2x"></i>&nbsp; FreeCodeCamp</a></li> -->
                             <li><a href="http://codepen.io/kmcmcurtis7/" class="btn" target=_blank><i class="fa fa-codepen fa-2x"></i>&nbsp; Codepen</a></li>
-                            <!--                            <li><a href="https://kmcmcurtis7.wordpress.com" class="btn" target=_blank><i class="fa fa-wordpress fa-2x"></i>&nbsp; Wordpress</a></li>-->
                             <li><a href="https://www.linkedin.com/in/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-linkedin-square fa-2x"></i>&nbsp; LinkedIn</a></li>
                             <li><a href="https://twitter.com/kmcmcurtis7" class="btn" target=_blank><i class="fa fa-twitter twitter fa-2x"></i>&nbsp; Twitter</a></li>
+
                           </ul>
                         </h4>
                       </div>  <!-- CONTACT Social Icons .col-xs-3 col-xs-offset-4 collapse -->
@@ -207,20 +213,23 @@
               </div>  <!-- CONTACT .container collapse -->
             </div>    <!-- CONTACT .contact_pic collapse -->
           </div>  <!-- CONTACT SECTION collapse -->
+        </div>  <!-- scrollspy collapse -->
       </div>   <!-- BODY .container-fluid collapse -->
     </body>
 
     <footer>
-      <div class="container-fluid">
+
+      <div class="fixed-bottom">
         <div id="ftrMargin">
           <div class="row">
-            <h4>
+            <h4 id="blchalmond">
               <a href="#home">Home &#8900;<span class="sr-only"></span></a>
               <a href="#about">About &#8900;</a>
               <a href="#portfolio">Portfolio &#8900;</a>
               <a href="#contact">Contact</a>
             </h4>
           </div>
+
           <div class="row">
             <div class="center">
               <h6>Original created in March 2016 and continuously being improved by Kelly M Curtis.</h6>
@@ -228,5 +237,7 @@
           </div>
         </div>
       </div> <!-- FOOTER .container-fluid collapse -->
+
     </footer>
+
     </html>
